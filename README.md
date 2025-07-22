@@ -1,3 +1,3 @@
-# kodeloftKurs
+# Kodeloft Kurs av Julie Hauge
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/JulieKodehode/kodeloftKurs)
+Her kommer en beskrivelse..
