@@ -9,11 +9,13 @@
 --secondaryColorSoft: #fff6f0;
 
 --generalSpacing: 16px; /*1em*/
+--fontFamily: "Roboto";
 }
 
 /* BODY STYLING */
 body {
     margin: 0;
+    font-family: var(--fontFamily);
 }
 
 .light {
@@ -84,4 +86,16 @@ color: var(--lightColor);
         align-items: flex-start;
         padding-block: var(--generalSpacing);
     }
+}
+
+/* FOOTER STYLING */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondaryColor);
+}
+
+.credit {
+    text-transform: uppercase;
 }
