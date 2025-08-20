@@ -12,6 +12,26 @@
 --fontFamily: "Roboto";
 }
 
+/* GLOBAL STYLING */
+.fullSection {
+    height: 100vh;
+}
+
+.halfSection {
+    height: 50vh;
+}
+
+.underline {
+    border-bottom-color: var(--primaryColor);
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    width: fit-content;
+}
+
+.hidden {
+    display: none;
+}
+
 /* BODY STYLING */
 body {
     margin: 0;
@@ -85,6 +105,100 @@ color: var(--lightColor);
     .header {
         align-items: flex-start;
         padding-block: var(--generalSpacing);
+    }
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px; /* TEMP: Might change placement */
+    padding-inline: 15%;
+
+    /* Introduction img */
+    background-image: url("../images/tempHeroImg.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.heroText {
+    color: white;
+    background-color: #16181Dff;
+    width: 50%;
+    padding: 16px;
+}
+
+.heroImg {
+    display: none;
+}
+
+/* HERO TABLET AND BELOW*/
+@media (max-width: 768px){
+    .hero {
+        flex-direction: column;
+        padding-inline: 5%;
+        background-image: none;
+    }
+
+    .heroText {
+        width: 100%;
+        background-color: inherit; /* Since with background-image its modified dark*/
+        color: inherit; /* Since with background-image its modified light*/
+    }
+
+
+    .heroSmall {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .heroImg {
+        display: block;
+        width: 100%;
+        transform: scale(1.5);
+        object-fit: cover;
+      }
+}
+
+/* LANGUAGE SECTION */
+.language {
+    background-color: var(--primaryColorSoft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.languageContainer {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.languageCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+
+    padding: 16px; /* Concider this a global for all cards*/
+}
+
+/* LANGUAGE TABLET AND BELOW*/
+@media (max-width: 768px){
+    .language {
+        flex-direction: column;
+        padding-inline: 5%; /* Concider this a global for all below screens */
+    }
+
+    .languageContainer {
+        flex-direction: column;
     }
 }
 
