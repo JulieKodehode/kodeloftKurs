@@ -56,6 +56,9 @@ color: var(--lightColor);
 
     padding-inline: var(--generalSpacing);
     background-color: var(--secondaryColor);
+
+    position: sticky;
+    top: 0;
 }
 
 .navList {
@@ -84,6 +87,11 @@ color: var(--lightColor);
 
 /* HEADER TABLET AND BELOW*/
 @media (max-width: 768px){
+    .header {
+        align-items: flex-start;
+        padding-block: var(--generalSpacing);
+    }
+
     .hamburgerIcon {
         display: block;
     }
@@ -101,11 +109,6 @@ color: var(--lightColor);
         color: var(--darkColor);
         text-align: right;
     }
-
-    .header {
-        align-items: flex-start;
-        padding-block: var(--generalSpacing);
-    }
 }
 
 /* HERO SECTION */
@@ -121,6 +124,8 @@ color: var(--lightColor);
     background-position: center;
     background-size: 90%;
     background-repeat: no-repeat;
+
+    padding-top: 50px; /* Midlertidig for header overlap */
 }
 
 .heroText {
@@ -192,12 +197,83 @@ color: var(--lightColor);
 
 /* LANGUAGE TABLET AND BELOW*/
 @media (max-width: 768px){
+    .halfSection {
+        height: 100vh; /* Mobil bryter med 50vh */
+    }
+
     .language {
         flex-direction: column;
         padding-inline: 5%; /* Concider this a global for all below screens */
+
+        padding-top: 30px; /* Midlertidig for header overlap */
     }
 
     .languageContainer {
+        flex-direction: column;
+    }
+}
+
+/* LEARNING SECTION */
+.learning {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px; /* TEMP: Might change placement */
+    padding-inline: 15%;
+}
+
+.learningContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.learningList {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.learningListItem {
+    padding: 8px;
+    background-color: var(--secondaryColorSoft);
+    border: 0.5px solid var(--secondaryColor);
+    border-radius: 10px;
+
+    color: var(--darkColor);
+
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Might remove*/
+  }
+  
+  .learningListItem:hover {
+    background-color: var(--secondaryColor);
+    border-color: var(--);
+  }
+
+  .learningDisplayBox {
+    height: 300px; /* Might change*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+/* LEARNING TABLET AND BELOW */
+@media (max-width: 768px){
+    .learning {
+        flex-direction: column;
+        padding-inline: 5%;
+
+        padding-top: 30px; /* Midlertidig for header overlap */
+    }
+
+    .learningContainer {
         flex-direction: column;
     }
 }

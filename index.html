@@ -16,9 +16,9 @@
 
       <nav class="nav">
         <ul id="hamburgerMenu" class="navList"> <!-- Kommer til å bytte klasse-->
-          <li class="navItem">Hjem</li>
-          <li class="navItem">Om</li>
-          <li class="navItem">Webutvikling</li>
+          <a href="#home"> <li class="navItem">Vil du lære</li> </a>
+          <a href="#languages"> <li class="navItem">Hvilke språk</li> </a>
+          <a href="#learning"> <li class="navItem">Hva lærer du</li> </a>
         </ul>
 
         <img id="hamburgerMenuIcon" class="icon hamburgerIcon" src="./images/hamburger.png" alt="Hamburger meny ikon">
@@ -26,7 +26,7 @@
     </header>
 
     <main>
-      <section id="Hjem" class="hero fullSection">
+      <section id="home" class="hero fullSection">
         <!-- Hero section -->
         <div class="heroText">
           <h1 class="title underline">Vil du lære web-utvikling?</h1>
@@ -41,7 +41,7 @@
       </section>
       
       <!-- Language section -->
-      <section class="language halfSection">
+      <section id="languages" class="language halfSection">
         <div class="languageContainer">
           <div class="languageCard">
             <div class="languageCardText">
@@ -53,6 +53,7 @@
               <p>Hello World</p>
             </div>
           </div>
+
           <div class="languageCard">
             <div class="languageCardText">
               <h3>CSS</h3>
@@ -63,6 +64,7 @@
               <p style="color: red">Hello World</p>
             </div>
           </div>
+
           <div class="languageCard">
             <div class="languageCardText">
               <h3>JS</h3>
@@ -76,18 +78,26 @@
         </div>
       </section>
 
-      <!-- Expectations section -->
-      <section class="fullSection">
-        <!-- 
-          Semantisk HTML
-          Plasserings metoder i CSS
-          Animasjoner i CSS
-          Design planlegging
-          Nettside analyser
-          Responsive nettsider
-          JavaScript for CTA funksjonaliteter
-          Data lagring og data henting med JavaScript 
-        -->
+      <!-- Learning section -->
+      <section id="learning" class="learning fullSection">
+        <h2 class="underline">Gjennom kurset lærer du</h2>
+        <div class="learningContainer">
+          <ul class="learningList">
+            <li class="learningListItem" data-info="Lær hvordan du bygger strukturerte nettsider som er lette å forstå både for mennesker og søkemotorer.">Semantisk HTML</li>
+            <li class="learningListItem" data-info="Utforsk Flexbox og Grid for å skape responsive og moderne layout-strukturer.">Plasseringsmetoder i CSS</li>
+            <li class="learningListItem" data-info="Gi nettsiden din liv med elegante overganger, animasjoner og kreative effekter ved hjelp av CSS.">Animasjoner i CSS</li>
+            <li class="learningListItem" data-info="Lær hvordan du planlegger en nettside fra idé til ferdig design og sikrer god brukeropplevelse.">Designplanlegging</li>
+            <li class="learningListItem" data-info="Forstå hvordan du kan analysere og evaluere eksisterende nettsider for bedre ytelse og funksjonalitet.">Nettsideanalyser</li>
+            <li class="learningListItem" data-info="Bygg nettsider som fungerer sømløst på både mobil, nettbrett og PC ved å bruke responsivt design.">Responsive nettsider</li>
+            <li class="learningListItem" data-info="Lær å bruke JavaScript for å lage klikkbare knapper, popup-effekter og andre interaktive elementer.">JavaScript for CTA-funksjonaliteter</li>
+            <li class="learningListItem" data-info="Oppdag hvordan du lagrer og henter data i nettleseren med JavaScript for mer dynamiske løsninger.">Data lagring og henting med JavaScript</li>
+          </ul>
+      
+          <div id="learningDisplayBox" class="learningDdisplayBox">
+            <h3>Velg et tema</h2>
+            <p>Klikk på et tema i menyen til venstre for å lese mer.</p>
+          </div>
+        </div>
       </section>
     </main>
 
