@@ -85,6 +85,14 @@ color: var(--lightColor);
     justify-content: flex-end;
 }
 
+.navAnchor {
+    color: inherit;
+}
+
+.navAnchor:hover {
+    font-weight: 500;
+}
+
 /* HEADER TABLET AND BELOW*/
 @media (max-width: 768px){
     .header {
@@ -253,6 +261,7 @@ color: var(--lightColor);
   .learningListItem:hover {
     background-color: var(--secondaryColor);
     border-color: var(--);
+    font-weight: 500;
   }
 
   .learningDisplayBox {
