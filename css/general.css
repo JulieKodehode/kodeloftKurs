@@ -32,6 +32,10 @@
     display: none;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 /* BODY STYLING */
 body {
     margin: 0;
@@ -203,6 +207,17 @@ color: var(--lightColor);
     padding: 16px; /* Concider this a global for all cards*/
 }
 
+/* Might change this fixed size */
+.languageCardText {
+    width: 300px;
+    height: 100px;
+}
+
+.languageCardDemoColor {
+    color: var(--secondaryColor);
+    text-shadow: 1px 1px 0 var(--darkColor);
+}
+
 /* LANGUAGE TABLET AND BELOW*/
 @media (max-width: 768px){
     .halfSection {
@@ -218,6 +233,10 @@ color: var(--lightColor);
 
     .languageContainer {
         flex-direction: column;
+    }
+    
+    .languageCardText {
+        width: 260px;
     }
 }
 
