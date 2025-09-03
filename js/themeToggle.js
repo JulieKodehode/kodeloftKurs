@@ -14,7 +14,9 @@ function themeToggle() {
         /* Bakgrunnsbilde og bagrunnsfarge skifte */ 
         hero.style.backgroundImage = 'url("../images/stackblitzScreenshotDark.png")'; 
         heroImg.src = "../images/stackblitzScreenshotDark.png"; 
-        heroText.classList.toggle("dark"); 
+        heroText.classList.add("dark"); 
+        heroText.classList.remove("light"); 
+        
     } else if (themeToggle.classList.contains("dark")) { 
         themeToggle.classList.remove("dark"); 
         themeToggle.classList.add("light"); 
@@ -22,13 +24,14 @@ function themeToggle() {
         /* Bakgrunnsbilde og bagrunnsfarge skifte */ 
         hero.style.backgroundImage = 'url("../images/stackblitzScreenshotLight.png")'; 
         heroImg.src = "../images/stackblitzScreenshotLight.png"; 
-        heroText.classList.toggle("light"); 
+        heroText.classList.add("light");
+        heroText.classList.remove("dark");  
     } else { 
         console.error("Noe gikk galt med å bytte fargetema på siden"); 
     };
     
     /* Sjekker størrelsen på skjermen om bacground-image skal være aktivt eller om det bytter til img-elementet */
-    if (window.innerWidth <= 425) { 
+    if (window.innerWidth <= 768) { 
         hero.style.backgroundImage = 'none'; 
     } else { 
         console.error("Noe galt skjedde med å sjekke etter skjermstørrelse for hvilket hero bilde som skal være aktivt") 
