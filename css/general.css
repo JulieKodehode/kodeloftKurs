@@ -1,7 +1,7 @@
 /* ROOT STYLING */
 :root {
---lightColor: #fdfdfd;
---darkColor: #0d0d0d;
+--lightColor: #FFFFFFff;
+--darkColor: #16181Dff;
 
 --primaryColor: #77c3b4;
 --secondaryColor: #f3a366;
@@ -10,6 +10,10 @@
 
 --generalSpacing: 16px; /* 1em */
 --fontFamily: "Roboto";
+
+/* Hvorfor tar ikke url i mot var... */
+--heroImgDark: "../images/stackblitzScreenshotLight.png";
+--heroImgLight: "../images/stackblitzScreenshot.png";
 }
 
 /* GLOBAL STYLING */
@@ -146,7 +150,7 @@ color: var(--lightColor);
     padding-inline: 15%;
 
     /* Introduction img */
-    background-image: url("../images/tempHeroImg.png");
+    background-image: url("../images/stackblitzScreenshotLight.png");
     background-position: center;
     background-size: 90%;
     background-repeat: no-repeat;
@@ -155,10 +159,11 @@ color: var(--lightColor);
 }
 
 .heroText {
-    color: white;
-    background-color: #16181Dff;
+    color: var(--darkColor);
+    background-color: var(--lightColor);
     width: 50%;
     padding: 16px;
+    border-radius: 16px; /* MIDLERTIDIG: Vurder om rundet eller harde kanter */
 }
 
 .heroImg {
