@@ -8,7 +8,7 @@
 --primaryColorSoft: #f1f9f7;
 --secondaryColorSoft: #fff6f0;
 
---generalSpacing: 16px; /*1em*/
+--generalSpacing: 16px; /* 1em */
 --fontFamily: "Roboto";
 }
 
@@ -142,7 +142,7 @@ color: var(--lightColor);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px; /* TEMP: Might change placement */
+    gap: 16px; /* MIDLERTIDIG: Kanskje bytte plassering */
     padding-inline: 15%;
 
     /* Introduction img */
@@ -151,7 +151,7 @@ color: var(--lightColor);
     background-size: 90%;
     background-repeat: no-repeat;
 
-    padding-top: 50px; /* Midlertidig for header overlap */
+    padding-top: 50px; /* MIDLERTIDIG: for header overlap */
 }
 
 .heroText {
@@ -175,8 +175,8 @@ color: var(--lightColor);
 
     .heroText {
         width: 100%;
-        background-color: inherit; /* Since with background-image its modified dark*/
-        color: inherit; /* Since with background-image its modified light*/
+        background-color: inherit; /* Siden bakgrunnsbilde ikke er på liten skjerm endrer fargen dynamisk for fargebytte. */
+        color: inherit; /* Siden bakgrunnsbilde ikke er på liten skjerm endrer fargen dynamisk for fargebytte. */
     }
 
 
@@ -211,21 +211,20 @@ color: var(--lightColor);
 
 .languageCard {
     width: 33%; /* 100/3 bokser */
-    height: 300px; /* Fixed height to stabilize */
+    height: 300px; /* Fast størrelse for å stabilisere boksene */
     display: flex;
     flex-direction: column;
 
     background-color: var(--primaryColor);
     border-radius: 10px;
 
-    padding: 16px; /* Concider this a global for all cards*/
+    padding: 16px; /* Vurder padding globalt for flere elementer */
 }
 
 .languageCardDemo {
     flex-direction: column;
 }
 
-/* Might change this fixed size */
 .languageCardText {
     width: 90%;
 }
@@ -243,7 +242,7 @@ color: var(--lightColor);
 
     .language {
         flex-direction: column;
-        padding-inline: 5%; /* Concider this a global for all below screens */
+        padding-inline: 5%; /* Vurder global på alle mobil brytepunkt */
 
         padding-top: 30px; /* Midlertidig for header overlap */
     }
@@ -263,7 +262,7 @@ color: var(--lightColor);
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 16px; /* TEMP: Might change placement */
+    gap: 16px; /* MIDERTIDIG: Vurdere å bytte til global */
     padding-inline: 15%;
 }
 
@@ -291,7 +290,7 @@ color: var(--lightColor);
     color: var(--darkColor);
 
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Might remove*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Vurder om shadow er nødvendig eller ikke med fargebytte */
   }
   
   .learningListItem:hover {
@@ -301,7 +300,7 @@ color: var(--lightColor);
   }
 
   .learningDisplayBox {
-    height: 300px; /* Might change*/
+    height: 300px; /* Fast størrelse for å stabilisere boksene */
     display: flex;
     flex-direction: column;
     align-items: center;
